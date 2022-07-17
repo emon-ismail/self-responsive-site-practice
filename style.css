@@ -60,7 +60,8 @@ body{
 
 @media screen and (max-width:576px) {
     .gallery {
-        grid-template-columns: 195px 195px ;
+        grid-template-columns: repeat(2,1fr) ;
+        width: 100%;
         background-color: black;
     }
 
