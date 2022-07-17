@@ -1,0 +1,88 @@
+/* .all {
+
+    margin-left: 250px;
+} */
+body{
+    max-width: 800px;
+    margin: 0 auto;
+}
+/* #intro{
+    margin-left: 30px;
+    margin-right: 250px;
+    border: 3px solid rgb(172, 170, 170);
+    background-color: rgb(216, 218, 220);
+    border-radius: 20px;
+    text-align: center;
+    padding: 10px;
+} */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    width: 100px;
+    height: auto;
+    /* justify-content: center; */
+    /* justify-items: center; */
+    align-items: center;
+
+
+
+}
+
+.card {
+    border: 2px solid rgb(172, 172, 171);
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(227, 227, 227);
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center; */
+
+}
+
+.card img {
+    width: 220px;
+    height: 200px;
+    border: 2px solid rgb(206, 201, 201);
+    border-radius: 10px;
+
+
+
+}
+
+/* .gallery .card img{
+    justify-content: center;
+    align-items: center;
+}  */
+.icon-star {
+    color: rgb(223, 201, 74);
+}
+
+@media screen and (max-width:576px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+        background-color: black;
+    }
+
+    h1 {
+        font-size: 10vw;
+    }
+    .card img{
+        width: 100%;
+    }
+    /* .gallery .card{
+        width: 700%;
+    } */
+
+}
+
+@media screen and (min-width:577px) and (max-width:992px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    h1 {
+        font-size: 10vw;
+    }
+
+
+}
